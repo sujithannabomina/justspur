@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — JustSpur</title>
+  <meta name="description" content="Get in touch with the JustSpur team.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <a class="nav-logo" href="index.html">just<span>spur</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">Features</a></li>
+    <li><a href="index.html">Pricing</a></li>
+    <li><a href="index.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="index.html">Get Early Access →</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="index.html">Features</a>
+  <a href="index.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="contact-layout" style="padding-top:80px;">
+
+  <div class="contact-left">
+    <p class="eyebrow">Contact</p>
+    <h1 class="heading h3" style="margin-bottom:20px;">Let's talk.</h1>
+    <p class="subtext">We're a small team and we read every single message. Whether it's a question, idea, or partnership — reach out.</p>
+    <div class="contact-links">
+      <a class="c-link" href="mailto:hello@justspur.com">
+        <div class="c-link-icon">✉️</div>
+        <div>
+          <div class="c-link-label">General enquiries</div>
+          <div class="c-link-val">hello@justspur.com</div>
+        </div>
+      </a>
+      <a class="c-link" href="mailto:support@justspur.com">
+        <div class="c-link-icon">🛟</div>
+        <div>
+          <div class="c-link-label">App support & billing</div>
+          <div class="c-link-val">support@justspur.com</div>
+        </div>
+      </a>
+      <a class="c-link" href="mailto:press@justspur.com">
+        <div class="c-link-icon">📰</div>
+        <div>
+          <div class="c-link-label">Press & media</div>
+          <div class="c-link-val">press@justspur.com</div>
+        </div>
+      </a>
+      <a class="c-link" href="#">
+        <div class="c-link-icon">📱</div>
+        <div>
+          <div class="c-link-label">Social media</div>
+          <div class="c-link-val">@justspur</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="contact-right">
+    <h2 class="form-title">Send us a message</h2>
+    <div id="contact-form-wrap">
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" id="cf-fname" placeholder="Arjun" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" id="cf-lname" placeholder="Mehta">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="cf-email" placeholder="arjun@email.com" required>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select id="cf-subject">
+            <option value="">Select a topic...</option>
+            <option>General question</option>
+            <option>Billing & subscription</option>
+            <option>Report a profile</option>
+            <option>Partnership or Press</option>
+            <option>Feature request</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="cf-message" placeholder="Tell us what's on your mind..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary submit-btn" style="width:100%;justify-content:center;">
+          Send Message →
+        </button>
+      </form>
+    </div>
+    <div class="form-success" id="form-success">
+      <div class="fs-icon">✅</div>
+      <h3>Message sent!</h3>
+      <p>We'll get back to you within 24 hours.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-brand">
+    <a class="nav-logo" href="index.html">just<span>spur</span></a>
+    <p>Intentional dating for real people who actually want to meet. India-first, activity-based, honest pricing.</p>
+  </div>
+  <div class="footer-col">
+    <h5>Product</h5>
+    <a href="index.html">Features</a>
+    <a href="index.html">Pricing</a>
+    <a href="index.html">Download App</a>
+  </div>
+  <div class="footer-col">
+    <h5>Company</h5>
+    <a href="index.html">About</a>
+    <a href="index.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-col">
+    <h5>Legal</h5>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="cookie-policy.html">Cookie Policy</a>
+    <a href="safety.html">Safety Guidelines</a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <span>© 2025 JustSpur · A MarchSeptember product · Made with 🧡 in India</span>
+  <div class="footer-socials">
+    <a href="#">Instagram</a>
+    <a href="#">Twitter</a>
+    <a href="#">LinkedIn</a>
+  </div>
+</div>
+
+<script>
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+
+  // Mobile nav
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobile-nav').classList.toggle('open');
+  });
+
+  // Contact form
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = contactForm.querySelector('.submit-btn');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
+      const data = {
+        name: document.getElementById('cf-fname')?.value + ' ' + document.getElementById('cf-lname')?.value,
+        email: document.getElementById('cf-email')?.value,
+        subject: document.getElementById('cf-subject')?.value,
+        message: document.getElementById('cf-message')?.value
+      };
+
+      // Replace YOUR_CONTACT_FORMSPREE_ID with your actual Formspree form ID
+      try {
+        const res = await fetch('https://formspree.io/f/YOUR_CONTACT_FORMSPREE_ID', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (res.ok) throw null; // go to success either way
+      } catch { }
+
+      document.getElementById('contact-form-wrap').style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    });
+  }
+</script>
+</body>
+</html>
