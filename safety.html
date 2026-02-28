@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safety Guidelines — JustSpur</title>
+  <meta name="description" content="JustSpur Safety Guidelines — how to stay safe while dating, what to watch for, and how to report concerns.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .legal-hero { padding: 160px 56px 80px; border-bottom: 1px solid var(--border); max-width: 860px; }
+    .legal-meta { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 28px; }
+    .legal-meta span { font-size: 13px; color: var(--muted2); background: var(--surface); border: 1px solid var(--border); padding: 6px 14px; border-radius: 100px; }
+    .legal-body { display: grid; grid-template-columns: 240px 1fr; gap: 0; }
+    .legal-toc { padding: 60px 32px 60px 56px; border-right: 1px solid var(--border); position: sticky; top: 80px; height: fit-content; }
+    .legal-toc h4 { font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
+    .legal-toc a { display: block; font-size: 13px; color: var(--muted2); padding: 8px 0; border-bottom: 1px solid var(--border); transition: color 0.2s; text-decoration: none; }
+    .legal-toc a:last-child { border-bottom: none; }
+    .legal-toc a:hover { color: var(--accent); }
+    .legal-content { padding: 60px 80px 120px 64px; max-width: 780px; }
+    .legal-section { margin-bottom: 56px; }
+    .legal-section h2 { font-family: 'Instrument Serif', serif; font-size: 28px; font-weight: 400; margin-bottom: 20px; color: var(--text); letter-spacing: -0.01em; padding-top: 8px; }
+    .legal-section h3 { font-size: 16px; font-weight: 600; margin: 24px 0 10px; color: var(--text); }
+    .legal-section p { font-size: 15px; color: var(--muted2); line-height: 1.85; margin-bottom: 14px; }
+    .legal-section ul { margin: 12px 0 16px 0; padding-left: 0; }
+    .legal-section ul li { font-size: 15px; color: var(--muted2); line-height: 1.75; padding: 8px 0 8px 20px; border-bottom: 1px solid var(--border); position: relative; list-style: none; }
+    .legal-section ul li:last-child { border-bottom: none; }
+    .legal-section ul li::before { content: '→'; color: var(--accent); position: absolute; left: 0; font-size: 13px; top: 10px; }
+    .safety-card {
+      border: 1px solid var(--border); border-radius: 16px;
+      padding: 28px 28px; margin-bottom: 16px;
+      display: flex; gap: 20px; align-items: flex-start;
+      transition: border-color 0.3s;
+    }
+    .safety-card:hover { border-color: var(--border2); }
+    .safety-icon { font-size: 32px; flex-shrink: 0; margin-top: 2px; }
+    .safety-card h4 { font-size: 16px; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+    .safety-card p { font-size: 14px; color: var(--muted2); line-height: 1.7; margin: 0; }
+    .safety-highlight-green {
+      background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2);
+      border-radius: 16px; padding: 24px 28px; margin: 20px 0;
+    }
+    .safety-highlight-green p { color: var(--muted2); font-size: 14px; line-height: 1.75; margin: 0; }
+    .safety-highlight-green strong { color: #22c55e; }
+    .safety-highlight-red {
+      background: rgba(255,75,31,0.06); border: 1px solid rgba(255,75,31,0.2);
+      border-radius: 16px; padding: 24px 28px; margin: 20px 0;
+    }
+    .safety-highlight-red p { color: var(--muted2); font-size: 14px; line-height: 1.75; margin: 0; }
+    .safety-highlight-red strong { color: var(--accent); }
+    .emergency-box {
+      background: var(--surface);
+      border: 1px solid var(--border2);
+      border-top: 3px solid #22c55e;
+      border-radius: 0 0 16px 16px;
+      padding: 32px 36px; margin: 32px 0;
+    }
+    .emergency-box h4 { font-size: 18px; font-weight: 700; margin-bottom: 20px; }
+    .emergency-item { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .emergency-item:last-child { border-bottom: none; }
+    .emergency-item .ei-icon { font-size: 24px; flex-shrink: 0; }
+    .emergency-item .ei-label { font-size: 12px; color: var(--muted2); }
+    .emergency-item .ei-val { font-size: 16px; font-weight: 600; color: var(--text); }
+    .section-divider { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+    @media(max-width:768px){ .legal-hero{padding:120px 24px 60px;} .legal-body{grid-template-columns:1fr;} .legal-toc{display:none;} .legal-content{padding:40px 24px 80px;} }
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="nav-logo" href="index.html">just<span>spur</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">Features</a></li>
+    <li><a href="index.html">Pricing</a></li>
+    <li><a href="index.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="index.html">Get Early Access →</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="index.html">Features</a>
+  <a href="index.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="legal-hero">
+  <p class="eyebrow">Safety</p>
+  <h1 class="heading h3">Safety Guidelines</h1>
+  <p style="font-size:17px;color:var(--muted2);line-height:1.7;margin-top:16px;max-width:620px;">Your safety is the most important thing to us. These guidelines will help you use JustSpur safely, recognise warning signs, and know what to do if something doesn't feel right.</p>
+  <div class="legal-meta">
+    <span>🛡️ Always Up to Date</span>
+    <span>📞 Emergency: 112</span>
+    <span>✉️ safety@justspur.com</span>
+  </div>
+</div>
+
+<div class="legal-body">
+  <div class="legal-toc">
+    <h4>Contents</h4>
+    <a href="#online-safety">1. Online Safety</a>
+    <a href="#first-date-safety">2. First Date Safety</a>
+    <a href="#red-flags">3. Red Flags</a>
+    <a href="#protecting-info">4. Protecting Your Info</a>
+    <a href="#consent">5. Consent & Respect</a>
+    <a href="#reporting">6. How to Report</a>
+    <a href="#blocking">7. Blocking Users</a>
+    <a href="#platform-safety">8. Platform Safety</a>
+    <a href="#mental-health">9. Mental Wellbeing</a>
+    <a href="#emergency">10. Emergency Contacts</a>
+  </div>
+
+  <div class="legal-content">
+
+    <div class="legal-section" id="online-safety">
+      <h2>1. Online Safety</h2>
+      <p>Before meeting anyone from JustSpur in person, take time to get comfortable online. Here's how to protect yourself:</p>
+      <div class="safety-card">
+        <div class="safety-icon">🔍</div>
+        <div>
+          <h4>Do a quick search</h4>
+          <p>Before meeting someone, search their name online. A genuine person will typically have some kind of social media presence. This doesn't mean everyone who doesn't is suspicious — but it's a good gut-check.</p>
+        </div>
+      </div>
+      <div class="safety-card">
+        <div class="safety-icon">📞</div>
+        <div>
+          <h4>Talk or video call first</h4>
+          <p>A short phone or video call before meeting can confirm the person is who they say they are. If someone repeatedly avoids calls or video, treat that as a caution sign.</p>
+        </div>
+      </div>
+      <div class="safety-card">
+        <div class="safety-icon">⏳</div>
+        <div>
+          <h4>Take your time</h4>
+          <p>There's no rush. Get comfortable through chat before agreeing to meet. Anyone who pressures you to meet immediately or move very fast should raise your antenna.</p>
+        </div>
+      </div>
+      <div class="safety-card">
+        <div class="safety-icon">🔒</div>
+        <div>
+          <h4>Keep chat on JustSpur</h4>
+          <p>Keep conversations in the app until you've met and feel comfortable. The app gives you easy reporting and blocking tools. Once you move to WhatsApp or Instagram, you lose those protections.</p>
+        </div>
+      </div>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="first-date-safety">
+      <h2>2. First Date Safety</h2>
+      <p>Meeting someone new is exciting. These simple steps help ensure it stays that way:</p>
+      <ul>
+        <li><strong>Meet in a public place</strong> — A café, restaurant, mall, or park. Never agree to meet at someone's home or a private location for a first meeting</li>
+        <li><strong>Tell someone where you're going</strong> — Share the location, your match's name, and an expected return time with a trusted friend or family member</li>
+        <li><strong>Use your own transport</strong> — Drive yourself, take a cab, or use public transport. Don't get into your date's vehicle for a first meeting</li>
+        <li><strong>Keep your phone charged</strong> — And make sure someone has your location sharing if possible</li>
+        <li><strong>Have a check-in plan</strong> — Agree with a friend to text them when you arrive and when you leave</li>
+        <li><strong>Trust your gut</strong> — If something feels wrong when you arrive, it's completely okay to leave. Your safety always comes first — no explanations needed</li>
+        <li><strong>Watch your drinks</strong> — Never leave your drink unattended and never accept a drink you didn't watch being poured</li>
+        <li><strong>Have an exit strategy</strong> — Know how you'll leave if you want to end the date early</li>
+      </ul>
+      <div class="safety-highlight-green">
+        <p><strong>Safe date locations in India:</strong> Coffee shops, malls, restaurants, popular parks, and multiplexes are all great first date venues. They're public, populated, and easy to leave.</p>
+      </div>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="red-flags">
+      <h2>3. Red Flags to Watch For</h2>
+      <p>Most people on JustSpur are genuine. But it's important to recognise warning signs:</p>
+      <h3>In conversation</h3>
+      <ul>
+        <li>Asks for your home address, workplace, or daily routine too early</li>
+        <li>Pressures you to meet quickly or move conversations off the app</li>
+        <li>Gets angry or aggressive if you're not immediately responsive</li>
+        <li>Their story changes — inconsistencies in what they tell you about themselves</li>
+        <li>Asks for money, a loan, or help with a "financial emergency"</li>
+        <li>Sends unsolicited explicit messages or photos</li>
+        <li>Profile photos look too professional or model-perfect — may be stolen photos</li>
+      </ul>
+      <h3>Before or during a date</h3>
+      <ul>
+        <li>Suggests meeting somewhere isolated or at their home for a first meeting</li>
+        <li>Shows up and looks significantly different from their profile photos</li>
+        <li>Dismisses or ignores your boundaries or comfort level</li>
+        <li>Tries to isolate you from public spaces or others</li>
+        <li>Makes you feel unsafe, uncomfortable, or pressured in any way</li>
+      </ul>
+      <div class="safety-highlight-red">
+        <p><strong>Trust yourself:</strong> If something feels off — online or in person — it probably is. You never owe anyone a date, a second chance, or an explanation for leaving.</p>
+      </div>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="protecting-info">
+      <h2>4. Protecting Your Personal Information</h2>
+      <ul>
+        <li><strong>Don't share your full name</strong> publicly on your profile until you're comfortable — a first name is enough to start</li>
+        <li><strong>Don't share your home address</strong> with a match you haven't met or don't know well</li>
+        <li><strong>Don't share financial information</strong> — bank details, UPI IDs, or card numbers — with anyone you've met on JustSpur (or any dating platform)</li>
+        <li><strong>Be careful with work information</strong> — your employer, office address, and work schedule are personal details that can be used for stalking</li>
+        <li><strong>Social media caution</strong> — linking your JustSpur to other social accounts reveals a lot about your life. Share social handles only after you've met and feel safe</li>
+        <li><strong>Your phone number</strong> — you can chat through JustSpur's built-in system. Share your number only when you're comfortable</li>
+      </ul>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="consent">
+      <h2>5. Consent & Respect</h2>
+      <p>Every person on JustSpur deserves to be treated with respect. Consent is the foundation of every positive interaction.</p>
+      <h3>Consent means</h3>
+      <ul>
+        <li>Freely given — not pressured, coerced, or under the influence</li>
+        <li>Reversible — someone can change their mind at any point, for any reason</li>
+        <li>Informed — both people understand what they're agreeing to</li>
+        <li>Enthusiastic — a "maybe" or silence is not a yes</li>
+        <li>Specific — agreeing to one thing is not agreeing to everything</li>
+      </ul>
+      <h3>Your responsibilities</h3>
+      <ul>
+        <li>Respect "no" — immediately and without argument, every single time</li>
+        <li>Accept that someone can change their mind about a date, meeting, or anything else</li>
+        <li>Do not send explicit messages or photos without clear prior consent</li>
+        <li>Do not harass, follow, or contact someone who has asked you to stop</li>
+      </ul>
+      <p>Violating someone's consent on JustSpur will result in immediate account termination and, where appropriate, reporting to law enforcement.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="reporting">
+      <h2>6. How to Report</h2>
+      <p>If you encounter a profile or user that feels unsafe, inappropriate, or suspicious — please report it. Reporting helps protect you and everyone else on the platform.</p>
+      <h3>Report directly in the app</h3>
+      <p>On any profile or chat: tap the three-dot menu (⋮) → "Report User." Choose a reason and add details. Reports are reviewed by our safety team within 24 hours.</p>
+      <h3>Report reasons include</h3>
+      <ul>
+        <li>Fake or fraudulent profile</li>
+        <li>Harassment or threatening behaviour</li>
+        <li>Unsolicited explicit content</li>
+        <li>Suspicious or scam behaviour (asking for money)</li>
+        <li>Underage user</li>
+        <li>Any other safety concern</li>
+      </ul>
+      <h3>Report by email</h3>
+      <p>For urgent safety matters or if you cannot report in-app, email us at <strong>safety@justspur.com</strong> with the user's name/profile details and a description of the concern. We respond to urgent reports within 2 hours.</p>
+      <div class="safety-highlight-green">
+        <p><strong>Your reports are confidential.</strong> We never reveal who reported a profile. Reporting is anonymous and is one of the most important things you can do to keep JustSpur safe for everyone.</p>
+      </div>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="blocking">
+      <h2>7. Blocking Users</h2>
+      <p>Blocking is your right — you never need a reason to block someone. Use it freely whenever you feel uncomfortable.</p>
+      <p>When you block someone on JustSpur:</p>
+      <ul>
+        <li>They are immediately removed from your match list</li>
+        <li>All chat history between you is hidden from both sides</li>
+        <li>They cannot find your profile in the matching feed</li>
+        <li>They receive no notification that they have been blocked</li>
+        <li>The block cannot be reversed by them — only by you</li>
+      </ul>
+      <p>To block: open the chat or profile → tap ⋮ → "Block User." It takes less than 3 seconds.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="platform-safety">
+      <h2>8. How JustSpur Keeps You Safe</h2>
+      <div class="safety-card">
+        <div class="safety-icon">🔐</div>
+        <div>
+          <h4>Google Sign-In Only</h4>
+          <p>Every JustSpur user has a verified Google account. This eliminates completely anonymous accounts and makes it harder to create multiple fake profiles.</p>
+        </div>
+      </div>
+      <div class="safety-card">
+        <div class="safety-icon">📍</div>
+        <div>
+          <h4>Approximate Location Only</h4>
+          <p>Other users see your approximate distance (e.g. "3.2 km away") — never your exact location, address, or GPS coordinates.</p>
+        </div>
+      </div>
+      <div class="safety-card">
+        <div class="safety-icon">👁️</div>
+        <div>
+          <h4>Profile Moderation</h4>
+          <p>Our team reviews flagged profiles and photos. We have zero tolerance for explicit content, fake identities, and profiles that violate our community standards.</p>
+        </div>
+      </div>
+      <div class="safety-card">
+        <div class="safety-icon">⚡</div>
+        <div>
+          <h4>Rapid Response</h4>
+          <p>Safety reports are reviewed within 24 hours. Urgent threats (harassment, safety emergencies) are responded to within 2 hours. Accounts confirmed for serious violations are terminated same day.</p>
+        </div>
+      </div>
+      <div class="safety-card">
+        <div class="safety-icon">🔜</div>
+        <div>
+          <h4>Photo Verification — Coming Soon</h4>
+          <p>We're building a photo verification system that will let users confirm they are who their photos show. Verified users will receive a badge on their profile.</p>
+        </div>
+      </div>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="mental-health">
+      <h2>9. Your Mental Wellbeing</h2>
+      <p>Dating can be emotionally complex. We care about your mental wellbeing, not just your physical safety.</p>
+      <ul>
+        <li><strong>Take breaks when needed</strong> — If JustSpur starts feeling like work or making you anxious, step away. Your mental health always matters more than finding a date</li>
+        <li><strong>You don't owe anyone anything</strong> — You can unmatch, stop replying, or block at any time. You never owe a stranger an explanation</li>
+        <li><strong>Rejection is normal</strong> — Not every match leads somewhere. That's okay and expected. Don't take it personally</li>
+        <li><strong>Set realistic expectations</strong> — JustSpur is a tool, not a guarantee. Real connections take time</li>
+        <li><strong>Talk to someone you trust</strong> — If an experience on the app upsets you, talk to a friend, family member, or counsellor</li>
+      </ul>
+      <p>If you're going through a difficult time and need professional support, iCall (India) offers free counselling: <strong>9152987821</strong> (Mon–Sat, 8am–10pm).</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="emergency">
+      <h2>10. Emergency Contacts</h2>
+      <p>If you are ever in immediate danger, please contact emergency services first. Here are key numbers for India:</p>
+      <div class="emergency-box">
+        <h4>🚨 Emergency Contacts — India</h4>
+        <div class="emergency-item">
+          <div class="ei-icon">🚔</div>
+          <div>
+            <div class="ei-label">Police Emergency</div>
+            <div class="ei-val">100</div>
+          </div>
+        </div>
+        <div class="emergency-item">
+          <div class="ei-icon">🚑</div>
+          <div>
+            <div class="ei-label">Ambulance</div>
+            <div class="ei-val">108</div>
+          </div>
+        </div>
+        <div class="emergency-item">
+          <div class="ei-icon">📞</div>
+          <div>
+            <div class="ei-label">All Emergency Services (Single Number)</div>
+            <div class="ei-val">112</div>
+          </div>
+        </div>
+        <div class="emergency-item">
+          <div class="ei-icon">👩</div>
+          <div>
+            <div class="ei-label">Women's Helpline (National)</div>
+            <div class="ei-val">1091</div>
+          </div>
+        </div>
+        <div class="emergency-item">
+          <div class="ei-icon">🆘</div>
+          <div>
+            <div class="ei-label">National Crisis Helpline (iCall)</div>
+            <div class="ei-val">9152987821</div>
+          </div>
+        </div>
+        <div class="emergency-item">
+          <div class="ei-icon">✉️</div>
+          <div>
+            <div class="ei-label">JustSpur Safety Team (24hr)</div>
+            <div class="ei-val">safety@justspur.com</div>
+          </div>
+        </div>
+      </div>
+      <p>If you've experienced harassment, assault, or any crime in connection with a JustSpur interaction, please report it to the police and also notify us at <strong>safety@justspur.com</strong>. We will cooperate fully with law enforcement investigations.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-brand">
+    <a class="nav-logo" href="index.html">just<span>spur</span></a>
+    <p>Intentional dating for real people who actually want to meet. India-first, activity-based, honest pricing.</p>
+  </div>
+  <div class="footer-col"><h5>Product</h5><a href="index.html">Features</a><a href="index.html">Pricing</a><a href="index.html">Download App</a></div>
+  <div class="footer-col"><h5>Company</h5><a href="index.html">About</a><a href="index.html">Blog</a><a href="contact.html">Contact</a></div>
+  <div class="footer-col">
+    <h5>Legal</h5>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="cookie-policy.html">Cookie Policy</a>
+    <a href="safety.html" style="color:var(--accent)">Safety Guidelines</a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <span>© 2025 JustSpur · A MarchSeptember product · Made with 🧡 in India</span>
+  <div class="footer-socials"><a href="#">Instagram</a><a href="#">Twitter</a><a href="#">LinkedIn</a></div>
+</div>
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('mobile-nav').classList.toggle('open'));
+</script>
+</body>
+</html>

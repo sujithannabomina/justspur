@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — JustSpur</title>
+  <meta name="description" content="JustSpur Privacy Policy — how we collect, use, and protect your personal data.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .legal-hero {
+      padding: 160px 56px 80px;
+      border-bottom: 1px solid var(--border);
+      max-width: 860px;
+    }
+    .legal-meta {
+      display: flex; gap: 24px; flex-wrap: wrap;
+      margin-top: 28px;
+    }
+    .legal-meta span {
+      font-size: 13px; color: var(--muted2);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 6px 14px; border-radius: 100px;
+    }
+    .legal-body {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 0;
+      min-height: 60vh;
+    }
+    .legal-toc {
+      padding: 60px 32px 60px 56px;
+      border-right: 1px solid var(--border);
+      position: sticky; top: 80px;
+      height: fit-content;
+    }
+    .legal-toc h4 {
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 20px;
+    }
+    .legal-toc a {
+      display: block; font-size: 13px; color: var(--muted2);
+      padding: 8px 0; border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+      text-decoration: none;
+    }
+    .legal-toc a:last-child { border-bottom: none; }
+    .legal-toc a:hover { color: var(--accent); }
+    .legal-content {
+      padding: 60px 80px 120px 64px;
+      max-width: 780px;
+    }
+    .legal-section { margin-bottom: 56px; }
+    .legal-section h2 {
+      font-family: 'Instrument Serif', serif;
+      font-size: 28px; font-weight: 400;
+      margin-bottom: 20px; color: var(--text);
+      letter-spacing: -0.01em;
+      padding-top: 8px;
+    }
+    .legal-section h3 {
+      font-size: 16px; font-weight: 600;
+      margin: 24px 0 10px; color: var(--text);
+    }
+    .legal-section p {
+      font-size: 15px; color: var(--muted2);
+      line-height: 1.85; margin-bottom: 14px;
+    }
+    .legal-section ul {
+      margin: 12px 0 16px 0; padding-left: 0;
+    }
+    .legal-section ul li {
+      font-size: 15px; color: var(--muted2);
+      line-height: 1.75; padding: 6px 0 6px 20px;
+      border-bottom: 1px solid var(--border);
+      position: relative; list-style: none;
+    }
+    .legal-section ul li:last-child { border-bottom: none; }
+    .legal-section ul li::before {
+      content: '→'; color: var(--accent);
+      position: absolute; left: 0;
+      font-size: 13px; top: 8px;
+    }
+    .legal-highlight {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px; margin: 20px 0;
+    }
+    .legal-highlight p { margin: 0; color: var(--muted2); font-size: 14px; }
+    .legal-highlight strong { color: var(--text); }
+    .section-divider {
+      border: none; border-top: 1px solid var(--border);
+      margin: 48px 0;
+    }
+    @media(max-width:768px){
+      .legal-hero{padding:120px 24px 60px;}
+      .legal-body{grid-template-columns:1fr;}
+      .legal-toc{display:none;}
+      .legal-content{padding:40px 24px 80px;}
+    }
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="nav-logo" href="index.html">just<span>spur</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#features">Features</a></li>
+    <li><a href="index.html#pricing">Pricing</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="index.html">Get Early Access →</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="index.html">Features</a>
+  <a href="index.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="legal-hero">
+  <p class="eyebrow">Legal</p>
+  <h1 class="heading h3">Privacy Policy</h1>
+  <p style="font-size:17px;color:var(--muted2);line-height:1.7;margin-top:16px;max-width:600px;">We believe privacy is a right, not a feature. This policy explains exactly what data we collect, why we collect it, and how we keep it safe. No jargon. No tricks.</p>
+  <div class="legal-meta">
+    <span>📅 Effective: 1 January 2025</span>
+    <span>🔄 Last Updated: 28 February 2025</span>
+    <span>📍 Applicable to: India</span>
+  </div>
+</div>
+
+<div class="legal-body">
+  <div class="legal-toc">
+    <h4>Contents</h4>
+    <a href="#who-we-are">1. Who We Are</a>
+    <a href="#data-we-collect">2. Data We Collect</a>
+    <a href="#how-we-use">3. How We Use It</a>
+    <a href="#data-sharing">4. Data Sharing</a>
+    <a href="#location-data">5. Location Data</a>
+    <a href="#photos">6. Your Photos</a>
+    <a href="#payments">7. Payments</a>
+    <a href="#data-retention">8. Data Retention</a>
+    <a href="#your-rights">9. Your Rights</a>
+    <a href="#children">10. Children</a>
+    <a href="#security">11. Security</a>
+    <a href="#changes">12. Changes</a>
+    <a href="#contact-us">13. Contact Us</a>
+  </div>
+
+  <div class="legal-content">
+
+    <div class="legal-section" id="who-we-are">
+      <h2>1. Who We Are</h2>
+      <p>JustSpur is an activity-based dating platform operated by <strong>MarchSeptember</strong>, a company based in India. When this policy says "JustSpur," "we," "us," or "our," it refers to MarchSeptember and the JustSpur platform.</p>
+      <p>JustSpur is the data controller for all personal information collected through our platform. You can reach us at <strong>privacy@justspur.com</strong> for any privacy-related requests.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="data-we-collect">
+      <h2>2. Data We Collect</h2>
+      <h3>Data you give us directly</h3>
+      <ul>
+        <li>Your Google account name, email address, and profile picture (collected at sign-in)</li>
+        <li>Display name, date of birth, and gender (set during onboarding)</li>
+        <li>Dating preferences (which genders you're interested in meeting)</li>
+        <li>Profile photos you upload (2–5 photos)</li>
+        <li>Date categories you select (e.g. coffee, drives, dinner)</li>
+        <li>Messages you send to your matches through our chat system</li>
+        <li>Any information you share when contacting our support team</li>
+      </ul>
+      <h3>Data we collect automatically</h3>
+      <ul>
+        <li>Your device location (when you grant permission — used for proximity matching only)</li>
+        <li>Device type, operating system, and app version</li>
+        <li>Log data: pages viewed, features used, errors encountered</li>
+        <li>IP address (used for fraud prevention and regional compliance)</li>
+        <li>Daily Spurs usage and match activity (to maintain your account limits)</li>
+      </ul>
+      <div class="legal-highlight">
+        <p><strong>We do not collect:</strong> your contacts, microphone access, camera access (outside photo uploads), browsing history, or any data from other apps on your device.</p>
+      </div>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="how-we-use">
+      <h2>3. How We Use Your Data</h2>
+      <p>We use your information only for purposes that are necessary to provide and improve JustSpur. Specifically:</p>
+      <ul>
+        <li>To create and manage your account and profile</li>
+        <li>To match you with compatible users based on your categories, preferences, and proximity</li>
+        <li>To enable chat between matched users</li>
+        <li>To enforce daily Spur limits and reset them each morning</li>
+        <li>To process your Premium subscription payment</li>
+        <li>To send transactional notifications (new match, new message, daily reset)</li>
+        <li>To detect and prevent fraud, fake profiles, and abuse</li>
+        <li>To improve the matching algorithm and product features</li>
+        <li>To comply with applicable Indian laws and regulations</li>
+      </ul>
+      <p>We <strong>never</strong> use your data to serve you third-party advertisements. JustSpur is an ad-free platform. Period.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="data-sharing">
+      <h2>4. Data Sharing</h2>
+      <p>We do not sell your personal data to anyone. We share limited data only in the following circumstances:</p>
+      <h3>With other users</h3>
+      <p>Your public profile (name, age, photos, date categories, approximate distance) is shown to potential matches. Your exact location, email address, phone number, and full address are never shared with other users.</p>
+      <h3>With service providers</h3>
+      <ul>
+        <li><strong>Google Firebase</strong> — database, authentication, and photo storage (Google's servers, India region where available)</li>
+        <li><strong>Razorpay</strong> — payment processing (they handle your card/UPI data under their own PCI-compliant systems)</li>
+        <li><strong>Formspree</strong> — contact and waitlist form submissions</li>
+      </ul>
+      <h3>For legal compliance</h3>
+      <p>We may share data with Indian law enforcement or regulatory authorities if required by law, court order, or to prevent serious harm. We will notify you where legally permitted to do so.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="location-data">
+      <h2>5. Location Data</h2>
+      <p>Location is central to how JustSpur works — we match you with people nearby. Here's how we handle it:</p>
+      <ul>
+        <li>We collect your location only when the app is open and you've granted permission</li>
+        <li>We use your location to show you matches within a 30-mile radius</li>
+        <li>Other users only see your <strong>approximate distance</strong> (e.g. "3.2 km away") — never your exact address or coordinates</li>
+        <li>We store your last known location in Firebase to power the matching algorithm</li>
+        <li>You can revoke location permission at any time through your device settings — though this will disable matching functionality</li>
+      </ul>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="photos">
+      <h2>6. Your Photos</h2>
+      <p>Photos you upload are stored securely in Google Firebase Storage. Your first photo is used as your main profile picture shown to potential matches.</p>
+      <ul>
+        <li>Photos are only visible to users you appear in front of based on the matching criteria</li>
+        <li>We do not use your photos to train AI systems or sell them to third parties</li>
+        <li>Base plan users set their photos once during onboarding. Premium users can update photos at any time</li>
+        <li>When you delete your account, your photos are permanently deleted within 30 days</li>
+      </ul>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="payments">
+      <h2>7. Payments & Billing</h2>
+      <p>All payment processing is handled by <strong>Razorpay</strong>, a PCI-DSS compliant payment gateway. JustSpur never stores your credit/debit card numbers, CVV, UPI PIN, or other sensitive payment credentials on our servers.</p>
+      <p>What we do store: your subscription status (active/inactive), the date your subscription renews, and your payment history (transaction IDs and amounts) for billing support purposes.</p>
+      <p>Razorpay's privacy policy applies to all payment data: <a href="https://razorpay.com/privacy/" style="color:var(--accent);">razorpay.com/privacy</a></p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="data-retention">
+      <h2>8. Data Retention</h2>
+      <ul>
+        <li><strong>Active accounts:</strong> Your data is retained as long as your account exists</li>
+        <li><strong>After account deletion:</strong> Most data is deleted within 30 days. Some anonymised usage data may be retained for up to 12 months for analytics</li>
+        <li><strong>Chat messages:</strong> Deleted permanently within 30 days of account deletion</li>
+        <li><strong>Payment records:</strong> Retained for 7 years as required by Indian financial regulations</li>
+        <li><strong>Abuse reports:</strong> Retained for up to 3 years to prevent re-registration by bad actors</li>
+      </ul>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="your-rights">
+      <h2>9. Your Rights</h2>
+      <p>Under India's Digital Personal Data Protection Act (DPDPA) 2023, you have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Right to access</strong> — Request a copy of all personal data we hold about you</li>
+        <li><strong>Right to correction</strong> — Ask us to correct inaccurate or incomplete data</li>
+        <li><strong>Right to erasure</strong> — Request deletion of your account and personal data</li>
+        <li><strong>Right to withdraw consent</strong> — Withdraw consent for data processing at any time (this will require account deletion)</li>
+        <li><strong>Right to grievance redressal</strong> — Lodge a complaint with our Data Protection Officer</li>
+      </ul>
+      <p>To exercise any of these rights, email us at <strong>privacy@justspur.com</strong> with the subject "Data Rights Request." We will respond within 30 days.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="children">
+      <h2>10. Children's Privacy</h2>
+      <p>JustSpur is strictly for users aged <strong>18 and above</strong>. We do not knowingly collect data from anyone under 18. During onboarding, we require date of birth verification and block access for users who are under 18.</p>
+      <p>If you believe a minor has created an account on JustSpur, please report it immediately to <strong>safety@justspur.com</strong> and we will delete the account within 24 hours.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="security">
+      <h2>11. Security</h2>
+      <p>We take reasonable and industry-standard measures to protect your data:</p>
+      <ul>
+        <li>All data is transmitted over HTTPS (TLS encryption)</li>
+        <li>Firebase Security Rules restrict data access to authenticated users only</li>
+        <li>Payment data is handled entirely by Razorpay's PCI-DSS certified infrastructure</li>
+        <li>Google sign-in eliminates password-based vulnerabilities</li>
+        <li>We conduct regular security reviews of our Firebase rules and app permissions</li>
+      </ul>
+      <p>No system is 100% secure. If you suspect a security issue, please contact us immediately at <strong>security@justspur.com</strong>.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="changes">
+      <h2>12. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time as our product evolves. When we make significant changes, we will:</p>
+      <ul>
+        <li>Update the "Last Updated" date at the top of this page</li>
+        <li>Send a notification to your registered email address</li>
+        <li>Display an in-app notice for material changes</li>
+      </ul>
+      <p>Continued use of JustSpur after changes are posted constitutes acceptance of the updated policy.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="contact-us">
+      <h2>13. Contact Us</h2>
+      <p>For any privacy-related questions, data requests, or concerns:</p>
+      <ul>
+        <li><strong>Email:</strong> privacy@justspur.com</li>
+        <li><strong>Data Protection Officer:</strong> dpo@justspur.com</li>
+        <li><strong>Grievance Officer:</strong> As required under DPDPA 2023 — grievance@justspur.com</li>
+        <li><strong>Company:</strong> MarchSeptember, India</li>
+      </ul>
+      <div class="legal-highlight">
+        <p>We are committed to responding to all privacy inquiries within <strong>30 days</strong> of receipt. For urgent safety matters, we respond within <strong>24 hours</strong>.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-brand">
+    <a class="nav-logo" href="index.html">just<span>spur</span></a>
+    <p>Intentional dating for real people who actually want to meet. India-first, activity-based, honest pricing.</p>
+  </div>
+  <div class="footer-col">
+    <h5>Product</h5>
+    <a href="index.html">Features</a>
+    <a href="index.html">Pricing</a>
+    <a href="index.html">Download App</a>
+  </div>
+  <div class="footer-col">
+    <h5>Company</h5>
+    <a href="index.html">About</a>
+    <a href="index.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-col">
+    <h5>Legal</h5>
+    <a href="privacy-policy.html" style="color:var(--accent)">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="cookie-policy.html">Cookie Policy</a>
+    <a href="safety.html">Safety Guidelines</a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <span>© 2025 JustSpur · A MarchSeptember product · Made with 🧡 in India</span>
+  <div class="footer-socials">
+    <a href="#">Instagram</a>
+    <a href="#">Twitter</a>
+    <a href="#">LinkedIn</a>
+  </div>
+</div>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobile-nav').classList.toggle('open');
+  });
+</script>
+</body>
+</html>

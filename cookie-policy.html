@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Policy — JustSpur</title>
+  <meta name="description" content="JustSpur Cookie Policy — what cookies we use and why.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .legal-hero { padding: 160px 56px 80px; border-bottom: 1px solid var(--border); max-width: 860px; }
+    .legal-meta { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 28px; }
+    .legal-meta span { font-size: 13px; color: var(--muted2); background: var(--surface); border: 1px solid var(--border); padding: 6px 14px; border-radius: 100px; }
+    .legal-body { display: grid; grid-template-columns: 240px 1fr; gap: 0; min-height: 60vh; }
+    .legal-toc { padding: 60px 32px 60px 56px; border-right: 1px solid var(--border); position: sticky; top: 80px; height: fit-content; }
+    .legal-toc h4 { font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
+    .legal-toc a { display: block; font-size: 13px; color: var(--muted2); padding: 8px 0; border-bottom: 1px solid var(--border); transition: color 0.2s; text-decoration: none; }
+    .legal-toc a:last-child { border-bottom: none; }
+    .legal-toc a:hover { color: var(--accent); }
+    .legal-content { padding: 60px 80px 120px 64px; max-width: 780px; }
+    .legal-section { margin-bottom: 56px; }
+    .legal-section h2 { font-family: 'Instrument Serif', serif; font-size: 28px; font-weight: 400; margin-bottom: 20px; color: var(--text); letter-spacing: -0.01em; padding-top: 8px; }
+    .legal-section h3 { font-size: 16px; font-weight: 600; margin: 24px 0 10px; color: var(--text); }
+    .legal-section p { font-size: 15px; color: var(--muted2); line-height: 1.85; margin-bottom: 14px; }
+    .legal-section ul { margin: 12px 0 16px 0; padding-left: 0; }
+    .legal-section ul li { font-size: 15px; color: var(--muted2); line-height: 1.75; padding: 6px 0 6px 20px; border-bottom: 1px solid var(--border); position: relative; list-style: none; }
+    .legal-section ul li:last-child { border-bottom: none; }
+    .legal-section ul li::before { content: '→'; color: var(--accent); position: absolute; left: 0; font-size: 13px; top: 8px; }
+    .legal-highlight { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 20px 0; }
+    .legal-highlight p { margin: 0; color: var(--muted2); font-size: 14px; }
+    .legal-highlight strong { color: var(--text); }
+    .section-divider { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+    /* Cookie type table */
+    .cookie-table { width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
+    .cookie-table thead { background: var(--surface); }
+    .cookie-table th { padding: 16px 20px; text-align: left; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: var(--muted2); border-bottom: 1px solid var(--border); }
+    .cookie-table td { padding: 14px 20px; font-size: 14px; color: var(--muted2); border-bottom: 1px solid var(--border); line-height: 1.6; }
+    .cookie-table tr:last-child td { border-bottom: none; }
+    .cookie-table td:first-child { color: var(--text); font-weight: 500; }
+    .badge { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 8px; border-radius: 100px; }
+    .badge-green { background: rgba(34,197,94,0.1); color: #22c55e; border: 1px solid rgba(34,197,94,0.2); }
+    .badge-yellow { background: rgba(255,170,0,0.1); color: var(--accent2); border: 1px solid rgba(255,170,0,0.2); }
+    .badge-red { background: rgba(255,75,31,0.1); color: var(--accent); border: 1px solid rgba(255,75,31,0.2); }
+    @media(max-width:768px){ .legal-hero{padding:120px 24px 60px;} .legal-body{grid-template-columns:1fr;} .legal-toc{display:none;} .legal-content{padding:40px 24px 80px;} .cookie-table{min-width:500px;} .cookie-table-wrap{overflow-x:auto;} }
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="nav-logo" href="index.html">just<span>spur</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">Features</a></li>
+    <li><a href="index.html">Pricing</a></li>
+    <li><a href="index.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="index.html">Get Early Access →</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="index.html">Features</a>
+  <a href="index.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="legal-hero">
+  <p class="eyebrow">Legal</p>
+  <h1 class="heading h3">Cookie Policy</h1>
+  <p style="font-size:17px;color:var(--muted2);line-height:1.7;margin-top:16px;max-width:600px;">Cookies are small files that help websites work better and remember your preferences. Here's exactly what we use, why, and how you can control it.</p>
+  <div class="legal-meta">
+    <span>📅 Effective: 1 January 2025</span>
+    <span>🔄 Last Updated: 28 February 2025</span>
+    <span>🍪 Cookies Used: Minimal</span>
+  </div>
+</div>
+
+<div class="legal-body">
+  <div class="legal-toc">
+    <h4>Contents</h4>
+    <a href="#what-are-cookies">1. What Are Cookies</a>
+    <a href="#our-approach">2. Our Approach</a>
+    <a href="#types-we-use">3. Types We Use</a>
+    <a href="#cookie-list">4. Full Cookie List</a>
+    <a href="#third-party">5. Third-Party Cookies</a>
+    <a href="#your-choices">6. Your Choices</a>
+    <a href="#do-not-track">7. Do Not Track</a>
+    <a href="#changes">8. Changes</a>
+    <a href="#contact">9. Contact</a>
+  </div>
+
+  <div class="legal-content">
+
+    <div class="legal-section" id="what-are-cookies">
+      <h2>1. What Are Cookies?</h2>
+      <p>Cookies are small text files placed on your device when you visit a website. They help websites remember information about you — like that you're logged in, or your preferences — so you don't have to re-enter it every time.</p>
+      <p>There are different types of cookies: some are essential for a site to function at all, while others are optional and used for things like analytics or advertising. We'll explain exactly which ones we use and why.</p>
+      <div class="legal-highlight">
+        <p><strong>Simple version:</strong> Cookies help JustSpur keep you logged in and work properly. We use very few of them — and zero advertising cookies.</p>
+      </div>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="our-approach">
+      <h2>2. Our Approach</h2>
+      <p>JustSpur uses a minimal cookie approach. We believe in your right to privacy, so we only use cookies that are genuinely necessary or that provide a meaningful benefit to your experience.</p>
+      <p>We do <strong>not</strong> use:</p>
+      <ul>
+        <li>Advertising or targeting cookies of any kind</li>
+        <li>Cookies to track you across other websites</li>
+        <li>Third-party social media tracking pixels</li>
+        <li>Any cookies to build a profile for selling to advertisers</li>
+      </ul>
+      <p>JustSpur is an ad-free platform. This means we have no commercial reason to track you beyond what's needed to make the platform function.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="types-we-use">
+      <h2>3. Types We Use</h2>
+      <h3><span class="badge badge-green">Essential</span> Strictly Necessary Cookies</h3>
+      <p>These cookies are required for JustSpur to function. Without them, you cannot log in, your session would not persist, and the app would not work. You cannot opt out of these without stopping using the service.</p>
+      <h3><span class="badge badge-yellow">Functional</span> Preference Cookies</h3>
+      <p>These remember your preferences and settings — for example, your chosen date categories, notification preferences, and display settings. They make your experience more personalised and consistent.</p>
+      <h3><span class="badge badge-yellow">Analytics</span> Performance Cookies</h3>
+      <p>We use basic, privacy-respecting analytics (Google Analytics with IP anonymisation) to understand how the platform is being used — which features are popular, where users drop off, and how to improve the experience. No personal data is linked to these analytics.</p>
+      <p>You can opt out of analytics cookies without affecting your use of JustSpur.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="cookie-list">
+      <h2>4. Full Cookie List</h2>
+      <p>Here is every cookie JustSpur sets on your device:</p>
+      <div class="cookie-table-wrap">
+        <table class="cookie-table">
+          <thead>
+            <tr>
+              <th>Cookie Name</th>
+              <th>Type</th>
+              <th>Purpose</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>__session</td>
+              <td><span class="badge badge-green">Essential</span></td>
+              <td>Maintains your login session with Firebase Authentication. Without this, you'd be logged out on every page visit.</td>
+              <td>Session</td>
+            </tr>
+            <tr>
+              <td>firebase_auth_token</td>
+              <td><span class="badge badge-green">Essential</span></td>
+              <td>Stores your Google authentication token so JustSpur can verify your identity securely.</td>
+              <td>1 hour (auto-refreshed)</td>
+            </tr>
+            <tr>
+              <td>js_pref</td>
+              <td><span class="badge badge-yellow">Functional</span></td>
+              <td>Stores your UI preferences such as notification settings and display choices.</td>
+              <td>1 year</td>
+            </tr>
+            <tr>
+              <td>_ga</td>
+              <td><span class="badge badge-yellow">Analytics</span></td>
+              <td>Google Analytics — distinguishes unique users for aggregate traffic analysis. IP is anonymised. No personal data attached.</td>
+              <td>2 years</td>
+            </tr>
+            <tr>
+              <td>_ga_[ID]</td>
+              <td><span class="badge badge-yellow">Analytics</span></td>
+              <td>Google Analytics — maintains session state for analytics tracking.</td>
+              <td>2 years</td>
+            </tr>
+            <tr>
+              <td>rzp_device_id</td>
+              <td><span class="badge badge-green">Essential</span></td>
+              <td>Set by Razorpay during payment flows for fraud prevention. Only active during payment processing.</td>
+              <td>Session</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="third-party">
+      <h2>5. Third-Party Cookies</h2>
+      <p>Some cookies are set by third-party services we use to operate JustSpur:</p>
+      <h3>Google Firebase</h3>
+      <p>Firebase handles our authentication and real-time database. It sets session cookies necessary for secure login. Google's cookie policy applies: <a href="https://policies.google.com/privacy" style="color:var(--accent);">policies.google.com/privacy</a></p>
+      <h3>Google Analytics</h3>
+      <p>We use Google Analytics with full IP anonymisation enabled. Analytics data is aggregated — we cannot identify individual users from it. You can opt out using <a href="https://tools.google.com/dlpage/gaoptout" style="color:var(--accent);">Google's opt-out browser extension</a>.</p>
+      <h3>Razorpay</h3>
+      <p>Razorpay sets a temporary cookie during payment processing for fraud detection. This cookie is cleared after your payment session. Razorpay's policy: <a href="https://razorpay.com/privacy/" style="color:var(--accent);">razorpay.com/privacy</a></p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="your-choices">
+      <h2>6. Your Choices</h2>
+      <h3>Browser settings</h3>
+      <p>You can control cookies through your browser settings. Most browsers allow you to block all cookies, block only third-party cookies, or delete existing cookies. Here's how in popular browsers:</p>
+      <ul>
+        <li><strong>Google Chrome:</strong> Settings → Privacy and security → Cookies and other site data</li>
+        <li><strong>Safari (iPhone/iPad):</strong> Settings → Safari → Privacy & Security</li>
+        <li><strong>Firefox:</strong> Settings → Privacy & Security → Cookies and Site Data</li>
+        <li><strong>Samsung Internet:</strong> Settings → Privacy → Cookie Preferences</li>
+      </ul>
+      <h3>What happens if you block cookies</h3>
+      <p>Blocking essential cookies will prevent you from logging in to JustSpur and using the platform. Blocking analytics cookies has no effect on your ability to use JustSpur.</p>
+      <h3>Opt out of analytics</h3>
+      <p>To opt out of Google Analytics specifically without affecting anything else, install the <a href="https://tools.google.com/dlpage/gaoptout" style="color:var(--accent);">Google Analytics Opt-out Browser Add-on</a>.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="do-not-track">
+      <h2>7. Do Not Track</h2>
+      <p>Some browsers send a "Do Not Track" (DNT) signal to websites. JustSpur respects DNT signals — when we detect a DNT signal, we disable all non-essential cookies (analytics and functional) for your session.</p>
+      <p>Essential cookies required for login and security are still used regardless of DNT status, as without them the platform cannot function at all.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="changes">
+      <h2>8. Changes to This Policy</h2>
+      <p>If we introduce new cookies or change how existing ones are used, we will update this policy and the "Last Updated" date. For significant changes that affect your privacy, we will notify you by email.</p>
+      <p>We commit to keeping our cookie usage minimal and transparent as the platform grows.</p>
+    </div>
+    <hr class="section-divider">
+
+    <div class="legal-section" id="contact">
+      <h2>9. Contact Us</h2>
+      <p>Questions about our cookie usage? We're happy to explain anything:</p>
+      <ul>
+        <li><strong>Email:</strong> privacy@justspur.com</li>
+        <li><strong>Subject line:</strong> "Cookie Policy Question"</li>
+        <li><strong>Response time:</strong> Within 5 business days</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-brand">
+    <a class="nav-logo" href="index.html">just<span>spur</span></a>
+    <p>Intentional dating for real people who actually want to meet. India-first, activity-based, honest pricing.</p>
+  </div>
+  <div class="footer-col"><h5>Product</h5><a href="index.html">Features</a><a href="index.html">Pricing</a><a href="index.html">Download App</a></div>
+  <div class="footer-col"><h5>Company</h5><a href="index.html">About</a><a href="index.html">Blog</a><a href="contact.html">Contact</a></div>
+  <div class="footer-col">
+    <h5>Legal</h5>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="cookie-policy.html" style="color:var(--accent)">Cookie Policy</a>
+    <a href="safety.html">Safety Guidelines</a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <span>© 2025 JustSpur · A MarchSeptember product · Made with 🧡 in India</span>
+  <div class="footer-socials"><a href="#">Instagram</a><a href="#">Twitter</a><a href="#">LinkedIn</a></div>
+</div>
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('mobile-nav').classList.toggle('open'));
+</script>
+</body>
+</html>
