@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JustSpur — Intentional Dating, Real Meetings</title>
+  <meta name="description" content="JustSpur matches you with real people nearby who want the same date experience. Coffee, drives, dinner and more. India's activity-based dating app. Coming soon on Play Store.">
+  <meta name="keywords" content="dating app india, activity dating, coffee date, justspur, intentional dating">
+  <meta property="og:title" content="JustSpur — Intentional Dating, Real Meetings">
+  <meta property="og:description" content="Stop swiping into the void. Match with people nearby who want the same date experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://justspur.com">
+  <meta name="theme-color" content="#080808">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Razorpay -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+  <a class="nav-logo" href="#" data-page="home">just<span>spur</span></a>
+  <ul class="nav-links">
+    <li><a href="#" data-page="home" class="active">Home</a></li>
+    <li><a href="#" data-page="features">Features</a></li>
+    <li><a href="#" data-page="pricing">Pricing</a></li>
+    <li><a href="#" data-page="about">About</a></li>
+    <li><a href="#" data-page="blog">Blog</a></li>
+    <li><a href="#" data-page="contact">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="#" data-page="pricing">Get Early Access →</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ═══ MOBILE NAV ═══ -->
+<div id="mobile-nav">
+  <a href="#" data-page="home">Home</a>
+  <a href="#" data-page="features">Features</a>
+  <a href="#" data-page="pricing">Pricing</a>
+  <a href="#" data-page="about">About</a>
+  <a href="#" data-page="blog">Blog</a>
+  <a href="#" data-page="contact">Contact</a>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     HOME PAGE
+════════════════════════════════════════ -->
+<div id="home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Now accepting early access signups · India
+    </div>
+
+    <h1 class="heading h1 hero-headline">
+      Dating that<br>
+      actually goes<br>
+      <em>somewhere.</em>
+    </h1>
+
+    <p class="subtext hero-sub">
+      No more swiping into the void. JustSpur matches you with real people nearby who want the same date — coffee, drives, dinner, and more.
+    </p>
+
+    <div class="hero-actions">
+      <!-- Play Store Button — replace href with your Play Store link when live -->
+      <a class="playstore-btn" href="#" onclick="showComingSoon(event)">
+        <span class="ps-icon">▶</span>
+        <span class="ps-text">
+          <small>Get it on</small>
+          <strong>Google Play</strong>
+        </span>
+      </a>
+      <a class="btn btn-outline" href="#" data-page="features">See how it works</a>
+    </div>
+
+    <div class="hero-social-proof">
+      <div class="avatars">
+        <span>🧑</span><span>👩</span><span>👨</span><span>👧</span><span>🧔</span>
+      </div>
+      <div class="social-proof-text">
+        <strong>1,200+ people</strong> already on the waitlist<br>
+        Mumbai · Bangalore · Delhi · Pune · Hyderabad
+      </div>
+    </div>
+
+    <!-- Floating match cards (hidden on mobile) -->
+    <div class="hero-cards">
+      <div class="match-card">
+        <div class="mc-users">
+          <div class="mc-avatar">🧑</div>
+          <div class="mc-avatar overlap">👩</div>
+          <div class="mc-info">
+            <div class="mc-name">Arjun & Priya</div>
+            <div class="mc-loc">Mumbai · 2.4 km away</div>
+          </div>
+          <div class="live-dot"></div>
+        </div>
+        <div class="mc-tag">☕ Coffee Date Match!</div>
+        <div class="mc-time">Matched 3 minutes ago</div>
+      </div>
+      <div class="match-card" style="margin-left:28px">
+        <div class="mc-users">
+          <div class="mc-avatar">👨</div>
+          <div class="mc-avatar overlap">👩</div>
+          <div class="mc-info">
+            <div class="mc-name">Rohan & Sneha</div>
+            <div class="mc-loc">Bangalore · 5.1 km away</div>
+          </div>
+          <div class="live-dot"></div>
+        </div>
+        <div class="mc-tag">🚗 Drive Date Match!</div>
+        <div class="mc-time">Matched 11 minutes ago</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMING SOON MODAL -->
+  <div id="coming-soon-modal" style="display:none;position:fixed;inset:0;z-index:800;background:rgba(0,0,0,0.85);backdrop-filter:blur(12px);align-items:center;justify-content:center;">
+    <div style="background:var(--surface);border:1px solid var(--border2);border-radius:28px;padding:56px 48px;max-width:440px;width:90%;text-align:center;position:relative;">
+      <button onclick="closeModal()" style="position:absolute;top:20px;right:20px;background:none;border:none;color:var(--muted2);font-size:22px;cursor:pointer;">✕</button>
+      <div style="font-size:56px;margin-bottom:20px;">🚀</div>
+      <h2 style="font-family:'Instrument Serif',serif;font-size:32px;margin-bottom:12px;">Coming Soon!</h2>
+      <p style="color:var(--muted2);font-size:16px;line-height:1.7;margin-bottom:32px;">JustSpur is launching on the Play Store very soon. Join the waitlist and be the first to know.</p>
+      <form id="modal-waitlist-form" style="display:flex;flex-direction:column;gap:12px;">
+        <input type="email" id="modal-email" placeholder="Enter your email" required style="background:var(--surface2);border:1px solid var(--border2);border-radius:12px;padding:14px 18px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:15px;outline:none;">
+        <button type="submit" class="btn btn-primary" style="justify-content:center;">Notify Me at Launch →</button>
+      </form>
+      <p style="font-size:12px;color:var(--muted);margin-top:16px;">No spam. One email when we launch. Promise.</p>
+    </div>
+  </div>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="stat-item reveal">
+      <div class="stat-num">1.2<span>K+</span></div>
+      <div class="stat-label">Waitlist Members</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <div class="stat-num">8</div>
+      <div class="stat-label">Date Categories</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="stat-num">5</div>
+      <div class="stat-label">Launch Cities</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <div class="stat-num">₹<span>99</span></div>
+      <div class="stat-label">Premium / Month</div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <p class="eyebrow reveal">How JustSpur Works</p>
+    <h2 class="heading h2 reveal">Three steps to a <em style="font-style:italic;color:var(--accent)">real</em> date.</h2>
+    <p class="subtext reveal" style="margin-top:16px;max-width:480px;">We stripped away everything unnecessary. Pick what you want to do, meet someone nearby who wants the same.</p>
+    <div class="steps-row reveal" style="margin-top:72px;">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-emoji">🎯</div>
+        <h3 class="step-title">Pick Your Date Type</h3>
+        <p class="step-desc">Choose from 8 activity categories — coffee, drives, dinner, games, and more. You only match with people who want the exact same thing.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <div class="step-emoji">⚡</div>
+        <h3 class="step-title">Use Your Daily Spurs</h3>
+        <p class="step-desc">5 intentional swipes per day. When every swipe costs something, every swipe counts. No more mindless scrolling — just real decisions.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <div class="step-emoji">📍</div>
+        <h3 class="step-title">Meet Someone Nearby</h3>
+        <p class="step-desc">All matches are within 30 miles. Real proximity, real dates. Not pen pals across the country — people you could meet this weekend.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- DATE CATEGORIES -->
+  <section class="section">
+    <p class="eyebrow reveal">Date Categories</p>
+    <h2 class="heading h2 reveal">What kind of date<br>are you looking for?</h2>
+    <p class="subtext reveal" style="margin-top:16px;max-width:460px;">Every match shares at least one category with you. No more figuring out what to do — you already know.</p>
+    <div class="cats-grid">
+      <div class="cat-card reveal">
+        <div class="cat-emoji">☕</div>
+        <div class="cat-name">Coffee & Chai</div>
+        <div class="cat-desc">Chill start. Great conversation, zero pressure. India's favourite first date.</div>
+      </div>
+      <div class="cat-card reveal reveal-delay-1">
+        <div class="cat-emoji">🍻</div>
+        <div class="cat-name">Drinks Date</div>
+        <div class="cat-desc">Cocktails or mocktails. The evening version of getting to know someone.</div>
+      </div>
+      <div class="cat-card reveal reveal-delay-2">
+        <div class="cat-emoji">🎬</div>
+        <div class="cat-name">Movie Date</div>
+        <div class="cat-desc">Side by side in the dark. Classic format, real connection.</div>
+      </div>
+      <div class="cat-card reveal reveal-delay-3">
+        <div class="cat-emoji">🚗</div>
+        <div class="cat-name">Drive Date</div>
+        <div class="cat-desc">Windows down, music up. India's most underrated first date.</div>
+      </div>
+      <div class="cat-card reveal">
+        <div class="cat-emoji">🏸</div>
+        <div class="cat-name">Sports & Fitness</div>
+        <div class="cat-desc">Badminton, cycling, a walk — active, energetic, and honest.</div>
+        <span class="cat-tag">Popular</span>
+      </div>
+      <div class="cat-card reveal reveal-delay-1">
+        <div class="cat-emoji">🎮</div>
+        <div class="cat-name">Game Date</div>
+        <div class="cat-desc">Board games, an arcade, or online gaming. Playful and real.</div>
+      </div>
+      <div class="cat-card reveal reveal-delay-2">
+        <div class="cat-emoji">🍽️</div>
+        <div class="cat-name">Dinner Date</div>
+        <div class="cat-desc">A proper sit-down. High intent, good food, good company.</div>
+        <span class="cat-tag">Premium</span>
+      </div>
+      <div class="cat-card reveal reveal-delay-3">
+        <div class="cat-emoji">🌄</div>
+        <div class="cat-name">Day Trips</div>
+        <div class="cat-desc">For when you want more than coffee. Explore something together.</div>
+        <span class="cat-tag">Premium</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <p class="eyebrow reveal">Early Users</p>
+    <h2 class="heading h2 reveal">They tried it.<br>Here's what they said.</h2>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">I matched with someone over a coffee date and we've been going out for three months. The category matching is genius — no awkward 'what do you want to do?' texts.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">☕</div>
+          <div>
+            <div class="testi-name">Ananya R.</div>
+            <div class="testi-city">Mumbai · Beta Tester</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">5 spurs a day sounds limiting but it made me actually read profiles. First real date in 8 months of using other apps. JustSpur got me one in week one.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">🚗</div>
+          <div>
+            <div class="testi-name">Karthik M.</div>
+            <div class="testi-city">Bangalore · Beta Tester</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-2">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Finally an app that doesn't feel like a game. ₹99 is nothing for quality matches. We went on a drive date — now we go every weekend. Highly recommend.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">🌄</div>
+          <div>
+            <div class="testi-name">Priya S.</div>
+            <div class="testi-city">Pune · Beta Tester</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST CTA -->
+  <section class="waitlist-section">
+    <p class="eyebrow reveal">Join the Waitlist</p>
+    <h2 class="heading h2 reveal" style="margin-bottom:16px;">Be first when<br>we launch.</h2>
+    <p class="subtext reveal" style="margin:0 auto;max-width:420px;text-align:center;">JustSpur launches on Play Store soon. Drop your email and we'll notify you the moment it's live — plus early access perks.</p>
+    <form class="waitlist-form reveal" id="waitlist-form">
+      <input type="email" id="waitlist-email" placeholder="your@email.com" required>
+      <button type="submit">Join Waitlist →</button>
+    </form>
+    <p class="waitlist-count" id="waitlist-count">Join <strong>1,247</strong> others already on the waitlist</p>
+  </section>
+
+</div><!-- /home -->
+
+
+<!-- ════════════════════════════════════════
+     FEATURES PAGE
+════════════════════════════════════════ -->
+<div id="features" class="page">
+
+  <section class="features-page-hero">
+    <p class="eyebrow">Features</p>
+    <h1 class="heading h2" style="margin-bottom:16px;">Built for people who<br>actually want to <em style="font-style:italic;color:var(--accent)">meet.</em></h1>
+    <p class="subtext" style="max-width:500px;">Every feature was designed with one goal — getting you on a real date, faster, with less noise and zero manipulation.</p>
+  </section>
+
+  <div class="features-bento">
+    <div class="feat-block wide">
+      <div class="feat-icon">🎯</div>
+      <h3 class="feat-title">Activity-Based Matching</h3>
+      <p class="feat-desc">You're matched with people who want the exact same date experience as you. No more "what do you want to do?" — you already both know. This single idea changes everything about how dating apps work.</p>
+    </div>
+    <div class="feat-block">
+      <div class="feat-icon">⚡</div>
+      <h3 class="feat-title">Daily Spurs System</h3>
+      <p class="feat-desc">5 intentional swipes per day. Every swipe is deliberate, reducing low-quality matches and making every connection feel considered and meaningful.</p>
+    </div>
+    <div class="feat-block">
+      <div class="feat-icon">📍</div>
+      <h3 class="feat-title">Proximity Matching</h3>
+      <p class="feat-desc">Only matches within 30 miles. No pen pals across the country — every match is someone you could realistically meet this week.</p>
+    </div>
+    <div class="feat-block">
+      <div class="feat-icon">🔒</div>
+      <h3 class="feat-title">Verified Profiles Only</h3>
+      <p class="feat-desc">Google sign-in means no anonymous accounts. Photo verification coming soon. No bots, no catfish, no fake profiles — just real people.</p>
+      <span class="feat-badge">Verification Coming Soon</span>
+    </div>
+    <div class="feat-block">
+      <div class="feat-icon">💬</div>
+      <h3 class="feat-title">Category-Powered Chat</h3>
+      <p class="feat-desc">When you match, you already share a date idea. Chat starts with built-in conversation starters based on your shared category — so the awkward silence never happens.</p>
+    </div>
+    <div class="feat-block">
+      <div class="feat-icon">👁️</div>
+      <h3 class="feat-title">See Who Liked You</h3>
+      <p class="feat-desc">Premium members can see exactly who swiped right on them before deciding. Stop guessing — know your match before you commit your Spur.</p>
+      <span class="feat-badge">Premium Only</span>
+    </div>
+    <div class="feat-block">
+      <div class="feat-icon">🌟</div>
+      <h3 class="feat-title">Weekly Profile Boost</h3>
+      <p class="feat-desc">Once a week, Premium members get pushed to the top of the feed in their city for one hour. Maximum visibility at the moment you choose.</p>
+      <span class="feat-badge">Premium Only</span>
+    </div>
+    <div class="feat-block">
+      <div class="feat-icon">🛡️</div>
+      <h3 class="feat-title">Safety First, Always</h3>
+      <p class="feat-desc">Easy report and block tools. Approximate location sharing only. A dedicated moderation team. Your safety isn't a feature we added — it's the foundation we built on.</p>
+    </div>
+    <div class="feat-block">
+      <div class="feat-icon">🚫</div>
+      <h3 class="feat-title">Zero Ads. Ever.</h3>
+      <p class="feat-desc">JustSpur makes money from subscriptions, not your attention. No ads, no sponsored profiles, no algorithmic manipulation. What you see is what's real.</p>
+    </div>
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <div class="compare-wrap">
+    <p class="eyebrow reveal">The Difference</p>
+    <h2 class="heading h2 reveal">JustSpur vs. everyone else</h2>
+    <div class="table-scroll">
+      <table class="compare-table reveal">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th class="hl">JustSpur ⚡</th>
+            <th>Typical Free Apps</th>
+            <th>Other Paid Apps</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Activity-based matching</td>
+            <td class="hl"><span class="ck">✓</span></td>
+            <td><span class="cx">✗</span></td>
+            <td><span class="cx">✗</span></td>
+          </tr>
+          <tr>
+            <td>Verified real profiles</td>
+            <td class="hl"><span class="ck">✓</span></td>
+            <td><span class="cx">✗</span></td>
+            <td>Partial</td>
+          </tr>
+          <tr>
+            <td>UPI / Indian payments</td>
+            <td class="hl"><span class="ck">✓</span></td>
+            <td>—</td>
+            <td><span class="cx">✗</span></td>
+          </tr>
+          <tr>
+            <td>India-first design</td>
+            <td class="hl"><span class="ck">✓</span></td>
+            <td>Partial</td>
+            <td><span class="cx">✗</span></td>
+          </tr>
+          <tr>
+            <td>Intentional swipe limit</td>
+            <td class="hl"><span class="ck">✓</span></td>
+            <td><span class="cx">✗</span></td>
+            <td><span class="cx">✗</span></td>
+          </tr>
+          <tr>
+            <td>No ads ever</td>
+            <td class="hl"><span class="ck">✓</span></td>
+            <td><span class="cx">✗</span></td>
+            <td>Partial</td>
+          </tr>
+          <tr>
+            <td>Premium price</td>
+            <td class="hl" style="color:var(--accent);font-weight:600;">₹99/mo</td>
+            <td>Free (poor quality)</td>
+            <td>₹800–2,000/mo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /features -->
+
+
+<!-- ════════════════════════════════════════
+     PRICING PAGE
+════════════════════════════════════════ -->
+<div id="pricing" class="page">
+
+  <section class="pricing-page-hero">
+    <p class="eyebrow">Pricing</p>
+    <h1 class="heading h2" style="margin-bottom:16px;">Simple. Honest.<br>Affordable.</h1>
+    <p class="subtext" style="margin:0 auto;max-width:420px;">Two plans. No hidden fees. No tricks. No "cancel in the next 5 minutes" pressure. Just fair pricing.</p>
+  </section>
+
+  <div class="pricing-cards-wrap">
+    <!-- FREE PLAN -->
+    <div class="price-card reveal">
+      <div class="plan-label">Free Plan</div>
+      <div class="plan-price"><small>₹</small>0</div>
+      <div class="plan-period">Forever free · No card needed</div>
+      <ul class="plan-feats">
+        <li>5 Spurs (swipes) per day</li>
+        <li>2 Date categories of your choice</li>
+        <li>30-mile radius matching</li>
+        <li>Chat with all matches</li>
+        <li>Google Sign-In (verified)</li>
+        <li class="off">See who liked you</li>
+        <li class="off">All 8 date categories</li>
+        <li class="off">Edit photos after setup</li>
+        <li class="off">Weekly profile Boost</li>
+        <li class="off">Priority in match feed</li>
+      </ul>
+      <div class="plan-btn-wrap">
+        <button class="btn btn-outline" onclick="showComingSoon(event)">Join Waitlist Free →</button>
+      </div>
+    </div>
+
+    <!-- PREMIUM PLAN -->
+    <div class="price-card featured reveal reveal-delay-2">
+      <div class="plan-label">Premium</div>
+      <div class="plan-price"><small>₹</small>99</div>
+      <div class="plan-period">per month · Cancel anytime · No contracts</div>
+      <ul class="plan-feats">
+        <li>5 Spurs/day (guaranteed daily reset)</li>
+        <li>All 8 Date categories unlocked</li>
+        <li>30-mile radius matching</li>
+        <li>See who liked you before swiping</li>
+        <li>Full photo management anytime</li>
+        <li>Priority placement in match feed</li>
+        <li>1× Weekly Profile Boost per week</li>
+        <li>Read receipts in chat</li>
+        <li>Zero ads · Forever</li>
+        <li>Priority customer support</li>
+      </ul>
+      <div class="plan-btn-wrap">
+        <button class="btn btn-primary" onclick="openRazorpay()">Upgrade for ₹99/mo →</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="payment-note reveal">
+    Payments secured by <strong>Razorpay</strong> — India's most trusted payment gateway
+    <div class="pay-logos">
+      <div class="pay-logo">🏦 UPI</div>
+      <div class="pay-logo">💳 Debit / Credit Card</div>
+      <div class="pay-logo">📱 Paytm</div>
+      <div class="pay-logo">🏧 Net Banking</div>
+      <div class="pay-logo">💰 PhonePe</div>
+      <div class="pay-logo">🟢 Google Pay</div>
+    </div>
+    <p style="margin-top:16px;font-size:13px;">All transactions are end-to-end encrypted. Cancel anytime from app settings. We never store your card details.</p>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq-wrap">
+    <div class="section-center" style="margin-bottom:60px;">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="heading h3">Frequently asked questions</h2>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What are Spurs exactly?</div>
+      <div class="faq-a">A Spur is a right-swipe on JustSpur — your intentional "I'm interested" signal. You get 5 per day on the free plan. They reset automatically every morning at midnight so you always have a fresh start.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can I cancel my subscription?</div>
+      <div class="faq-a">Yes, absolutely. Cancel anytime from the app settings or by emailing support@justspur.com. You keep premium access until the end of your current billing period. No fees, no questions asked.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How does activity-based matching work?</div>
+      <div class="faq-a">When you sign up, you choose 2 date categories (up to 8 on premium). You'll only see profiles of people who share at least one category with you — AND who match your gender preferences AND are within 30 miles. When you both swipe right, it's a match.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Which cities is JustSpur launching in?</div>
+      <div class="faq-a">We're launching in Mumbai, Bangalore, Delhi, Pune, and Hyderabad first — then expanding city by city to ensure quality matches everywhere we go. Join the waitlist and we'll tell you when your city is live.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do you keep profiles safe and real?</div>
+      <div class="faq-a">Every user signs in with Google (no anonymous accounts possible). We have easy report and block tools, a dedicated moderation team, and photo verification coming very soon. Safety is built into the foundation, not bolted on afterwards.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is the 30-mile radius fixed?</div>
+      <div class="faq-a">Currently yes, though we're developing a smart radius system that adapts based on user density in your area — smaller in dense metros like Mumbai, slightly larger in smaller cities. This is coming in a future update.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">When does the app launch on Play Store?</div>
+      <div class="faq-a">Very soon! We're in the final stages of development. Join the waitlist on our homepage and you'll be among the first to know — plus get early access perks when we launch.</div>
+    </div>
+  </div>
+
+</div><!-- /pricing -->
+
+
+<!-- ════════════════════════════════════════
+     ABOUT PAGE
+════════════════════════════════════════ -->
+<div id="about" class="page">
+
+  <section class="about-hero">
+    <div class="about-text">
+      <p class="eyebrow">Our Story</p>
+      <h1 class="heading h2" style="margin-bottom:28px;">We got tired of<br><em style="font-style:italic;color:var(--accent)">going nowhere.</em></h1>
+      <p>We built JustSpur because we were sick of matching with someone, texting for three weeks, and never actually meeting. Dating apps had quietly turned into <strong>entertainment products</strong> — not tools for genuine connection.</p>
+      <p>The problem wasn't the people. It was the system. When swiping is infinite and free, nobody takes it seriously. When there's no shared intention about what kind of date you're looking for, every conversation starts from scratch.</p>
+      <p>So we stripped it all back. <strong>Pick your date type. Use your 5 daily Spurs with intention. Meet someone nearby who wants the same thing.</strong> That's the whole idea. That's JustSpur.</p>
+      <div style="margin-top:36px;">
+        <a class="btn btn-primary" href="#" data-page="pricing">Join the Waitlist →</a>
+      </div>
+    </div>
+    <div class="about-visual">
+      <span style="position:relative;z-index:1;">💘</span>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section">
+    <p class="eyebrow reveal">Our Values</p>
+    <h2 class="heading h2 reveal">What we actually<br>believe in.</h2>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-num">01</div>
+        <h3 class="value-title">Intention Over Volume</h3>
+        <p class="value-desc">A smaller number of meaningful interactions beats thousands of empty swipes every time. We design for quality of connections, not time spent in the app.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-1">
+        <div class="value-num">02</div>
+        <h3 class="value-title">Real Meetings, Not Texting</h3>
+        <p class="value-desc">Our entire product pushes toward getting you from "match" to "date" as fast as possible. A pen pal is not the goal. A date is.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <div class="value-num">03</div>
+        <h3 class="value-title">Privacy as a Default</h3>
+        <p class="value-desc">Approximate location only. We don't sell your data. We don't run ads on your profile. Your personal life is yours — we're just the connector.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">04</div>
+        <h3 class="value-title">India First</h3>
+        <p class="value-desc">Built for Indian cities, priced for Indian wallets. UPI payments, chai date culture, and cities that actually matter to you — not copied from a US app.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-1">
+        <div class="value-num">05</div>
+        <h3 class="value-title">Safety is Non-Negotiable</h3>
+        <p class="value-desc">Every product decision passes through a safety filter. Verified sign-in, photo moderation, easy reporting. We take this more seriously than anything else.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <div class="value-num">06</div>
+        <h3 class="value-title">Honest Pricing</h3>
+        <p class="value-desc">₹99/month. No dark patterns, no "cancel in the next 5 minutes or you'll be charged," no tricks. Cancel anytime, zero questions asked.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section class="founder-section">
+    <div class="section-center">
+      <p class="eyebrow">The Builder</p>
+      <h2 class="heading h3">Behind JustSpur</h2>
+    </div>
+    <div class="founder-card reveal">
+      <div class="founder-avatar">👨‍💻</div>
+      <div class="founder-name">Sujith</div>
+      <div class="founder-role">Founder · MarchSeptember</div>
+      <p class="founder-bio">Building JustSpur to create the dating experience he always wished existed — intentional, honest, and built for India. JustSpur is part of MarchSeptember, a portfolio of products built around real people and real interactions.</p>
+    </div>
+  </section>
+
+</div><!-- /about -->
+
+
+<!-- ════════════════════════════════════════
+     BLOG PAGE
+════════════════════════════════════════ -->
+<div id="blog" class="page">
+
+  <section class="blog-page-hero">
+    <p class="eyebrow">The JustSpur Blog</p>
+    <h1 class="heading h2" style="margin-bottom:16px;">Dating, honestly.</h1>
+    <p class="subtext" style="max-width:480px;">Thoughts on modern dating, intentional connections, and why we're building JustSpur differently from every app before it.</p>
+  </section>
+
+  <div class="blog-grid">
+    <div class="blog-card reveal">
+      <div class="blog-thumb">☕</div>
+      <div class="blog-body">
+        <span class="blog-tag">Dating Tips</span>
+        <h3 class="blog-title">Why the Coffee Date is Still the Best First Date (And Always Will Be)</h3>
+        <p class="blog-excerpt">Low pressure, easy exit, good conversation. The humble coffee date remains the most honest first meeting you can suggest — and here's the science behind why.</p>
+        <div class="blog-meta"><span>Jan 12, 2025</span><span>·</span><span>4 min read</span></div>
+      </div>
+    </div>
+    <div class="blog-card reveal reveal-delay-1">
+      <div class="blog-thumb">📱</div>
+      <div class="blog-body">
+        <span class="blog-tag">App Culture</span>
+        <h3 class="blog-title">Why Infinite Swiping is Ruining Your Love Life</h3>
+        <p class="blog-excerpt">The psychology of endless scrolling, how dating apps quietly exploit it, and what happens to your dating life when you put real limits back in.</p>
+        <div class="blog-meta"><span>Jan 19, 2025</span><span>·</span><span>6 min read</span></div>
+      </div>
+    </div>
+    <div class="blog-card reveal reveal-delay-2">
+      <div class="blog-thumb">🇮🇳</div>
+      <div class="blog-body">
+        <span class="blog-tag">India Dating</span>
+        <h3 class="blog-title">Dating in India in 2025: What's Changed, What Hasn't</h3>
+        <p class="blog-excerpt">A candid look at how young India dates today — and why most apps still feel like they were built for someone else's culture entirely.</p>
+        <div class="blog-meta"><span>Jan 28, 2025</span><span>·</span><span>8 min read</span></div>
+      </div>
+    </div>
+    <div class="blog-card reveal">
+      <div class="blog-thumb">🚗</div>
+      <div class="blog-body">
+        <span class="blog-tag">Date Ideas</span>
+        <h3 class="blog-title">The Drive Date: India's Most Underrated First Date</h3>
+        <p class="blog-excerpt">No awkward silences when you're both watching the road. Why a late-night drive might be the most honest, most comfortable first date format you can go on.</p>
+        <div class="blog-meta"><span>Feb 3, 2025</span><span>·</span><span>5 min read</span></div>
+      </div>
+    </div>
+    <div class="blog-card reveal reveal-delay-1">
+      <div class="blog-thumb">💸</div>
+      <div class="blog-body">
+        <span class="blog-tag">Behind JustSpur</span>
+        <h3 class="blog-title">Why We Charge ₹99 (And Why Free Would Have Been a Mistake)</h3>
+        <p class="blog-excerpt">Free dating apps are full of people who aren't really looking for dates. Here's the honest business and product case for a small paywall that changes everything.</p>
+        <div class="blog-meta"><span>Feb 10, 2025</span><span>·</span><span>7 min read</span></div>
+      </div>
+    </div>
+    <div class="blog-card reveal reveal-delay-2">
+      <div class="blog-thumb">🛡️</div>
+      <div class="blog-body">
+        <span class="blog-tag">Safety</span>
+        <h3 class="blog-title">How We Think About Safety at JustSpur</h3>
+        <p class="blog-excerpt">Our approach to verification, reporting, and building trust into every layer of the product — not as an afterthought, but as the foundation everything else is built on.</p>
+        <div class="blog-meta"><span>Feb 17, 2025</span><span>·</span><span>5 min read</span></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /blog -->
+
+
+<!-- ════════════════════════════════════════
+     CONTACT PAGE
+════════════════════════════════════════ -->
+<div id="contact" class="page">
+  <div class="contact-layout" style="padding-top:80px;">
+
+    <div class="contact-left">
+      <p class="eyebrow">Contact</p>
+      <h1 class="heading h3" style="margin-bottom:20px;">Let's talk.</h1>
+      <p class="subtext">We're a small team and we read every single message. Whether it's a question, idea, or partnership — reach out.</p>
+      <div class="contact-links">
+        <a class="c-link" href="mailto:hello@justspur.com">
+          <div class="c-link-icon">✉️</div>
+          <div>
+            <div class="c-link-label">General enquiries</div>
+            <div class="c-link-val">hello@justspur.com</div>
+          </div>
+        </a>
+        <a class="c-link" href="mailto:support@justspur.com">
+          <div class="c-link-icon">🛟</div>
+          <div>
+            <div class="c-link-label">App support & billing</div>
+            <div class="c-link-val">support@justspur.com</div>
+          </div>
+        </a>
+        <a class="c-link" href="mailto:press@justspur.com">
+          <div class="c-link-icon">📰</div>
+          <div>
+            <div class="c-link-label">Press & media</div>
+            <div class="c-link-val">press@justspur.com</div>
+          </div>
+        </a>
+        <a class="c-link" href="#">
+          <div class="c-link-icon">📱</div>
+          <div>
+            <div class="c-link-label">Social media</div>
+            <div class="c-link-val">@justspur</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <h2 class="form-title">Send us a message</h2>
+      <div id="contact-form-wrap">
+        <!-- 
+          IMPORTANT: This form uses Formspree (free).
+          Setup steps:
+          1. Go to https://formspree.io and sign up free
+          2. Click "New Form" and name it "JustSpur Contact"
+          3. Copy your Form ID (e.g. xpzgkdna)
+          4. Replace action="https://formspree.io/f/YOUR_ID" below with your actual ID
+        -->
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" id="cf-fname" placeholder="Arjun" required>
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" id="cf-lname" placeholder="Mehta">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="cf-email" placeholder="arjun@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <select id="cf-subject">
+              <option value="">Select a topic...</option>
+              <option>General question</option>
+              <option>Billing & subscription</option>
+              <option>Report a profile</option>
+              <option>Partnership or Press</option>
+              <option>Feature request</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea id="cf-message" placeholder="Tell us what's on your mind..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary submit-btn" style="width:100%;justify-content:center;">Send Message →</button>
+        </form>
+      </div>
+      <div class="form-success" id="form-success">
+        <div class="fs-icon">✅</div>
+        <h3>Message sent!</h3>
+        <p>We'll get back to you within 24 hours.</p>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /contact -->
+
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-brand">
+    <a class="nav-logo" href="#" data-page="home">just<span>spur</span></a>
+    <p>Intentional dating for real people who actually want to meet. India-first, activity-based, honest pricing.</p>
+  </div>
+  <div class="footer-col">
+    <h5>Product</h5>
+    <a href="#" data-page="features">Features</a>
+    <a href="#" data-page="pricing">Pricing</a>
+    <a href="#" data-page="pricing">FAQ</a>
+    <a href="#" onclick="showComingSoon(event)">Download App</a>
+  </div>
+  <div class="footer-col">
+    <h5>Company</h5>
+    <a href="#" data-page="about">About</a>
+    <a href="#" data-page="blog">Blog</a>
+    <a href="#" data-page="contact">Contact</a>
+    <a href="#" data-page="contact">Press</a>
+  </div>
+  <div class="footer-col">
+    <h5>Legal</h5>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Cookie Policy</a>
+    <a href="#">Safety Guidelines</a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <span>© 2025 JustSpur · A MarchSeptember product · Made with 🧡 in India</span>
+  <div class="footer-socials">
+    <a href="#">Instagram</a>
+    <a href="#">Twitter</a>
+    <a href="#">LinkedIn</a>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  // Coming soon modal helpers
+  function showComingSoon(e) {
+    if (e) e.preventDefault();
+    document.getElementById('coming-soon-modal').style.display = 'flex';
+  }
+  function closeModal() {
+    document.getElementById('coming-soon-modal').style.display = 'none';
+  }
+  // Close modal on backdrop click
+  document.getElementById('coming-soon-modal')?.addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+  // Modal waitlist form
+  document.getElementById('modal-waitlist-form')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('modal-email').value;
+    const btn = e.target.querySelector('button');
+    btn.textContent = 'Joining...';
+    btn.disabled = true;
+    // Reuse same Formspree ID as main waitlist
+    try {
+      await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ email, source: 'playstore-modal' })
+      });
+    } catch(err) {}
+    document.getElementById('modal-waitlist-form').innerHTML = '<p style="color:var(--green);font-weight:600;font-size:16px;text-align:center;padding:12px 0;">🎉 You\'re on the list! We\'ll email you at launch.</p>';
+  });
+</script>
+</body>
+</html>
